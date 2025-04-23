@@ -1,0 +1,30 @@
+/* Importação das fontes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'Butler';
+  src: url('https://cdn.jsdelivr.net/gh/davelab6/butler@main/fonts/webfonts/Butler/Butler-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Butler';
+  src: url('https://cdn.jsdelivr.net/gh/davelab6/butler@main/fonts/webfonts/Butler/Butler.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Butler';
+  src: url('https://cdn.jsdelivr.net/gh/davelab6/butler@main/fonts/webfonts/Butler/Butler-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Butler';
+  src: url('https://cdn.jsdelivr.net/gh/davelab6/butler@main/fonts/webfonts/Butler/Butler-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}

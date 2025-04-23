@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-beige: #eae7e0;
+    --color-black: #231f20;
+    --color-taupe: #948780;
+    --color-white: #ffffff;
+  }
+  
+  body {
+    @apply font-montserrat text-black-main antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-butler;
+  }
+}
+
+@layer components {
+  .container-lg {
+    @apply max-w-[1200px] mx-auto px-6 md:px-10;
+  }
+
+  .container-md {
+    @apply max-w-[1000px] mx-auto px-6 md:px-10;
+  }
+  
+  .container-fluid {
+    @apply w-full mx-auto;
+  }
+
+  .btn-primary {
+    @apply font-montserrat font-semibold uppercase text-sm tracking-wider inline-block text-center min-w-[280px] py-5 px-10;
+    background: linear-gradient(45deg, #f1e196, #dca53e, #f1e196);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite;
+    color: #231f20; /* Texto escuro para contrastar com o gradiente claro */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(220, 165, 62, 0.3);
+  }
+  
+  .btn-secondary {
+    @apply bg-taupe text-white py-5 px-10 font-montserrat font-semibold uppercase text-sm tracking-wider inline-block text-center min-w-[280px];
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .btn-secondary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(148, 135, 128, 0.3);
+  }
+  
+  .section-title {
+    @apply font-butler font-medium text-4xl md:text-5xl lg:text-6xl leading-tight mb-8;
+  }
+  
+  .section-subtitle {
+    @apply font-butler font-normal text-2xl md:text-3xl lg:text-4xl leading-tight mb-6;
+  }
+  
+  .body-text {
+    @apply font-montserrat text-lg leading-relaxed;
+  }
+  
+  .highlight-text {
+    @apply font-montserrat font-medium text-xl;
+  }
+  
+  .text-small {
+    @apply font-montserrat text-base leading-normal text-taupe;
+  }
+}
+
+/* Keyframes para animação do gradiente */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Floating image animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.floating-image {
+  animation: float 6s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* Add varying animation times to create more natural movement */
+.floating-image:nth-child(2n) {
+  animation-duration: 8s;
+}
+
+.floating-image:nth-child(3n) {
+  animation-duration: 7s;
+}
+
+.floating-image:nth-child(5n) {
+  animation-duration: 10s;
+}
+
+/* Reduce floating image size on mobile */
+@media (max-width: 768px) {
+  .floating-image {
+    transform: scale(0.8);
+  }
+}
+
+/* Carousel animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.testimonials-carousel {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* FAQ Accordion animations */
+.faq-answer {
+  transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+}
