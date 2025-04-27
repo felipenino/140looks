@@ -112,7 +112,7 @@ function App() {
               }}
             >
               <div className="absolute inset-0 bg-black/50"></div>
-              <h3 className="font-butler text-2xl text-white px-6 text-center relative z-10">Organize seu guarda-roupa de forma prática e funcional</h3>
+              <h3 className="font-butler text-2xl text-white px-6 text-center relative z-10">Um guarda-roupa prático e funcional</h3>
             </div>
             
             <div 
@@ -152,7 +152,7 @@ function App() {
               </li>
             </ul>
             <div className="text-center mb-8">
-              <p className="font-semibold text-xl">⚠️ SE VOCÊ SE IDENTIFICA COM ISSO, SEU GUARDA-ROUPA ESTÁ SABOTANDO SUA IMAGEM!</p>
+              <p className="font-semibold text-xl">⚠️ SE VOCÊ SE IDENTIFICA COM ISSO, SUAS ESCOLHAS ESTÃO SABOTANDO SUA IMAGEM!</p>
             </div>
 
             {/* Novo Bloco Verde */}
