@@ -30,7 +30,7 @@ const ProductOffer: React.FC = () => {
             <div className="md:w-3/4 md:pl-8">
               <h3 className="font-montserrat text-2xl font-bold mb-2 text-[#1b1b1b]">1. Guia Closet Essencial</h3>
               <p className="font-montserrat font-semibold uppercase text-lg mb-3 text-white underline">
-                MAIS DE 140 LOOKS USANDO APENAS 18 PEÇAS.
+                MAIS DE 140 LOOKS USANDO APENAS 18 PEÇAS
               </p>
               <p className="text-[#1b1b1b] mb-3">
               O guia perfeito para você fazer escolhas assertivas e nunca mais sofrer para se arrumar. 
