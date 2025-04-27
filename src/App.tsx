@@ -59,11 +59,12 @@ function App() {
               </div>
               
               <h1 className="font-butler font-bold text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight">
-                CHEGA DE PERDER TEMPO ESCOLHENDO ROUPA!
+                CHEGA DE
+                PERDER TEMPO ESCOLHENDO ROUPA!
               </h1>
               
               <p className="text-2xl md:text-3xl font-montserrat mb-8" style={{ color: '#86897E' }}>
-                APRENDA A CRIAR MAIS DE 140 LOOKS USANDO APENAS 14 PEÇAS.
+                APRENDA A CRIAR MAIS DE 140 LOOKS USANDO APENAS 18 PEÇAS.
               </p>
               
               <p className="text-lg md:text-xl mb-8 max-w-2xl">
