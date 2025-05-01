@@ -23,7 +23,7 @@ function App() {
       answer: "Não necessariamente. O guia foi desenvolvido para ajudar você a aproveitar melhor as peças que já possui. Claro, podem haver sugestões de itens básicos que complementam o guarda-roupa, mas o objetivo principal é ensinar a montar looks versáteis com poucas peças, economizando seu dinheiro."
     },
     {
-      question: "Vou receber o quê?",
+      question: "xx3 receber o quê?",
       answer: "Você receberá: 1) Um e-book completo em formato PDF com todas as dicas para organizar seu guarda-roupa e criar mais de 140 looks com apenas 14 peças, 2) Acesso ao aplicativo Closet Essencial com todas as combinações em formato digital, 3) Um guia exclusivo de acessórios para elevar seus looks. Tudo isso com acesso imediato após a compra."
     },
     {
