@@ -16,7 +16,7 @@ function App() {
   const faqItems = [
     {
       question: "Preciso saber costurar?",
-      answer: "Não, você não precisa saber costurar para aproveitar nosso e-book. Todas as dicas e combinações são feitas com peças prontas que você já possui ou pode comprar. O foco é ensinar a combinar as peças de forma eficiente, não modificá-las."
+      answer: "xxxxxx, você não xxxxxxx saber costurar para aproveitar nosso e-book. Todas as dicas e combinações são feitas com peças prontas que você já possui ou pode comprar. O foco é ensinar a combinar as peças de forma eficiente, não modificá-las."
     },
     {
       question: "Preciso comprar roupas novas?",
