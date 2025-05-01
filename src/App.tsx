@@ -16,10 +16,10 @@ function App() {
   const faqItems = [
     {
       question: "Preciso saber costurar?",
-      answer: "xxxxxx, você não xxxxxxx saber costurar para aproveitar nosso e-book. Todas as dicas e combinações são feitas com peças prontas que você já possui ou pode comprar. O foco é ensinar a combinar as peças de forma eficiente, não modificá-las."
+      answer: "Não, você não xxxxxxx saber costurar para aproveitar nosso e-book. Todas as dicas e combinações são feitas com peças prontas que você já possui ou pode comprar. O foco é ensinar a combinar as peças de forma eficiente, não modificá-las."
     },
     {
-      question: "Preciso comprar roupas novas?",
+      question: "xxxxx2 comprar roupas novas?",
       answer: "Não necessariamente. O guia foi desenvolvido para ajudar você a aproveitar melhor as peças que já possui. Claro, podem haver sugestões de itens básicos que complementam o guarda-roupa, mas o objetivo principal é ensinar a montar looks versáteis com poucas peças, economizando seu dinheiro."
     },
     {
