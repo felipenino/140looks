@@ -12,6 +12,9 @@
     {
       "target": "looks",
       "public": "dist/b",
+      "rewrites": [
+        { "source": "**", "destination": "/index-b.html" }
+      ],
       "ignore": [
         "firebase.json",
         "**/.*",
