@@ -5,7 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:b": "vite --config vite.config.ts --mode version-b",
     "build": "vite build",
+    "build:b": "vite build --mode version-b",
+    "build:all": "npm run build && npm run build:b",
     "lint": "eslint .",
     "preview": "vite preview"
   },

@@ -15,20 +15,20 @@ function App() {
   // FAQ data
   const faqItems = [
     {
-      question: "Preciso saber costurar?",
-      answer: "Não, você não xxxxxxx saber costurar para aproveitar nosso e-book. Todas as dicas e combinações são feitas com peças prontas que você já possui ou pode comprar. O foco é ensinar a combinar as peças de forma eficiente, não modificá-las."
+      question: "É difícil de aplicar na prática? Tenho pouco tempo no dia a dia.",
+      answer: "É super simples e direto. Você vai encontrar exemplos visuais, combinações prontas e uma linguagem leve. Foi feito pra funcionar na vida real — inclusive pra quem vive na correria."
     },
     {
-      question: "xxxxx2 comprar roupas novas?",
-      answer: "Não necessariamente. O guia foi desenvolvido para ajudar você a aproveitar melhor as peças que já possui. Claro, podem haver sugestões de itens básicos que complementam o guarda-roupa, mas o objetivo principal é ensinar a montar looks versáteis com poucas peças, economizando seu dinheiro."
+      question: "Esse guia é feito para quem?",
+      answer: "Foi feito para mulheres reais, que querem se vestir bem com praticidade, sem complicação. Nada técnico, nada exagerado — só o necessário pra destravar sua relação com o seu armário. Inclusive tem ótimas opções de combinações para quem trabalha de maneira presencial e/ou em escritórios."
     },
     {
-      question: "xx3 receber o quê?",
-      answer: "Você receberá: 1) Um e-book completo em formato PDF com todas as dicas para organizar seu guarda-roupa e criar mais de 140 looks com apenas 14 peças, 2) Acesso ao aplicativo Closet Essencial com todas as combinações em formato digital, 3) Um guia exclusivo de acessórios para elevar seus looks. Tudo isso com acesso imediato após a compra."
+      question: "Como vou receber o conteúdo?",
+      answer: "Assim que finalizar a compra, você vai receber: Um eBook em PDF com todo conteúdo e 140 looks prontos. Um link exclusivo pro WebApp (um mini site interativo, que pode virar um aplicativo, pra facilitar ainda mais o seu acesso). É tudo digital, prático e feito pra você acessar de onde quiser, principalmente no seu celular!"
     },
     {
-      question: "Quanto tempo terei acesso?",
-      answer: "O acesso é vitalício! Uma vez que você compra o pacote, terá acesso permanente a todos os materiais. Você pode baixar o PDF para seu dispositivo e acessar quando quiser, mesmo offline. O acesso ao aplicativo também é permanente, através de um login criado no momento da compra."
+      question: "E se eu não gostar? Vocês devolvem meu dinheiro?",
+      answer: "Tenho certeza de que você vai amar, mas se não for útil pra você, você pode pedir seu dinheiro de volta em até 7 dias após a compra."
     }
   ];
 
@@ -72,7 +72,7 @@ function App() {
               </p>
               
               <div className="flex flex-col sm:flex-row items-center gap-6">
-                <a href="#comprar" className="btn-primary text-lg py-6 px-10">
+                <a href="https://pay.hotmart.com/C99586077J" className="btn-primary text-lg py-6 px-10">
                   QUERO BAIXAR MEU GUIA AGORA
                 </a>
               </div>
@@ -99,7 +99,8 @@ function App() {
                 backgroundPosition: 'center'
               }}
             >
-              <div className="absolute inset-0 bg-black/50"></div>
+              {/* Remova esta div abaixo para eliminar o filtro preto */}
+              {/* <div className="absolute inset-0 bg-black/50"></div> */}
               <h3 className="font-butler text-2xl text-white px-6 text-center relative z-10">Crie looks incríveis com as roupas que já tem</h3>
             </div>
             
@@ -111,7 +112,8 @@ function App() {
                 backgroundPosition: 'center'
               }}
             >
-              <div className="absolute inset-0 bg-black/50"></div>
+              {/* Remova esta div abaixo para eliminar o filtro preto */}
+              {/* <div className="absolute inset-0 bg-black/50"></div> */}
               <h3 className="font-butler text-2xl text-white px-6 text-center relative z-10">Um guarda-roupa prático e funcional</h3>
             </div>
             
@@ -123,13 +125,14 @@ function App() {
                 backgroundPosition: 'center'
               }}
             >
-              <div className="absolute inset-0 bg-black/50"></div>
+              {/* Remova esta div abaixo para eliminar o filtro preto */}
+              {/* <div className="absolute inset-0 bg-black/50"></div> */}
               <h3 className="font-butler text-2xl text-white px-6 text-center relative z-10">Monte um guarda-roupa versátil e completo</h3>
             </div>
           </div>
 
           <div className="text-center mt-16">
-            <a href="#comprar" className="btn-primary text-lg py-6 px-10">
+            <a href="https://pay.hotmart.com/C99586077J" className="btn-primary text-lg py-6 px-10">
               COMPRAR POR R$ 37
             </a>
           </div>
@@ -180,7 +183,7 @@ function App() {
                   </div>
                   
                   <div className="mt-4">
-                    <a href="#comprar" className="btn-primary text-base py-4 px-6 inline-block w-full md:w-auto text-center">
+                    <a href="https://pay.hotmart.com/C99586077J" className="btn-primary text-base py-4 px-6 inline-block w-full md:w-auto text-center">
                       NÃO DEIXE SEU GUARDA-ROUPA LIMITAR VOCÊ
                     </a>
                   </div>

@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "closet-su",
+    "firebase use --add": "sample-firebase-ai-app-nino"
+  },
+  "targets": {
+    "closet-su": {
+      "hosting": {
+        "guia": ["closet-su"],
+        "looks": ["140looks-suelenlun"]
+      }
+    }
+  },
+  "etags": {}
+}

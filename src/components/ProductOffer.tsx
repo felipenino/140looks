@@ -1,7 +1,26 @@
 import React from 'react';
-import { Shield, ThumbsUp, Lock, CreditCard } from 'lucide-react';
 
 const ProductOffer: React.FC = () => {
+  // Função para rastrear evento de conversão
+  const handlePurchaseClick = () => {
+    // Rastrear evento no Facebook Pixel
+    if (typeof window.fbq === 'function') {
+      window.fbq('track', 'InitiateCheckout', {
+        location: 'product_offer'
+      });
+    }
+    
+    // Rastrear evento no Google Analytics
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'begin_checkout', {
+        button_location: 'product_offer'
+      });
+    }
+    
+    // Redirecionar para a página de pagamento
+    window.location.href = 'https://pay.hotmart.com/C99586077J';
+  };
+
   return (
     <section className="py-16 bg-[#1b1b1b] text-white relative z-10">
       <div className="container-md">
@@ -24,7 +43,7 @@ const ProductOffer: React.FC = () => {
               <img 
                 src="/images/ebookp.png" 
                 alt="Capa do e-book Closet Essencial" 
-                className="w-[150px] h-auto shadow-lg"
+                className="w-auto h-auto"
               />
             </div>
             <div className="md:w-3/4 md:pl-8">
@@ -46,13 +65,13 @@ const ProductOffer: React.FC = () => {
         </div>
 
         {/* Item 2: Aplicativo Closet Essencial */}
-        <div className="mb-6 bg-[#1D3B36] rounded-lg overflow-hidden">
+        <div className="mb-6 rounded-lg overflow-hidden" style={{ background: 'linear-gradient(to bottom, #3E7977, #2A4545)' }}>
           <div className="p-6 flex flex-col md:flex-row items-center">
             <div className="md:w-1/4 mb-6 md:mb-0 relative flex justify-center">
               <img 
                 src="/images/bonus1.png" 
                 alt="Aplicativo Closet Essencial" 
-                className="w-[150px] h-auto"
+                className="w-auto h-auto"
               />
             </div>
             <div className="md:w-3/4 md:pl-8">
@@ -65,13 +84,13 @@ const ProductOffer: React.FC = () => {
         </div>
 
         {/* Item 3: Acessórios */}
-        <div className="mb-6 bg-[#1D3B36] rounded-lg overflow-hidden">
+        <div className="mb-6 rounded-lg overflow-hidden" style={{ background: 'linear-gradient(to bottom, #3E7977, #2A4545)' }}>
           <div className="p-6 flex flex-col md:flex-row items-center">
             <div className="md:w-1/4 mb-6 md:mb-0 relative flex justify-center">
               <img 
                 src="/images/bonus2.png" 
                 alt="Guia de Acessórios" 
-                className="w-[150px] h-auto"
+                className="w-auto h-auto"
               />
             </div>
             <div className="md:w-3/4 md:pl-8">
@@ -91,63 +110,53 @@ const ProductOffer: React.FC = () => {
             <p className="text-gray-500 mb-2">por apenas R$ 37,00 ou</p>
             
             <div className="mb-6">
-              <p className="font-montserrat text-4xl font-bold">12x de R$ 4,00</p>
+              <p className="font-montserrat text-4xl font-bold">5x de R$ 8,19</p>
               <p className="text-xs text-gray-500">(mais barato que uma blusinha)</p>
             </div>
             
-            <a href="#comprar-agora" className="btn-primary text-lg py-6 px-10">
+            <button 
+              onClick={handlePurchaseClick} 
+              className="btn-primary text-lg py-6 px-10"
+            >
               COMPRAR AGORA COM DESCONTO
-            </a>
-            <div className="flex justify-center space-x-8 mb-4">
-              <div className="flex items-center">
-                <Shield size={24} />
-                <span className="text-xs ml-2">COMPRA SEGURA</span>
-              </div>
-              <div className="flex items-center">
-                <ThumbsUp size={24} />
-                <span className="text-xs ml-2">SATISFAÇÃO GARANTIDA</span>
-              </div>
-              <div className="flex items-center">
-                <Lock size={24} />
-                <span className="text-xs ml-2">PRIVACIDADE PROTEGIDA</span>
-              </div>
+            </button>
+            <div className="flex justify-center mb-4 mt-4">
+              <img 
+                src="/images/satisfacao.png" 
+                alt="Compra Segura, Satisfação Garantida, Privacidade Protegida" 
+                width="340" 
+                height="51" 
+                className="h-auto"
+              />
             </div>
           </div>
         </div>
 
         {/* Métodos de Pagamento */}
         <div className="mt-6 flex flex-wrap justify-center items-center gap-4">
-          <div className="flex items-center justify-center bg-white p-2 rounded h-8">
-            <CreditCard size={20} className="text-gray-700" />
-            <span className="ml-1 text-xs text-gray-700 font-semibold">Boleto</span>
+          <div className="flex items-center justify-center p-2 rounded h-16">
+            <img src="/images/payment-images/Boleto/48.png" alt="Boleto" className="h-[48px]" />
           </div>
-          <div className="flex items-center justify-center bg-white p-2 rounded h-8">
-            <CreditCard size={20} className="text-gray-700" />
-            <span className="ml-1 text-xs text-gray-700 font-semibold">PayPal</span>
+          <div className="flex items-center justify-center p-2 rounded h-16">
+            <img src="/images/payment-images/PayPal/48.png" alt="PayPal" className="h-[48px]" />
           </div>
-          <div className="flex items-center justify-center bg-white p-2 rounded h-8">
-            <CreditCard size={20} className="text-gray-700" />
-            <span className="ml-1 text-xs text-gray-700 font-semibold">Google Pay</span>
+          <div className="flex items-center justify-center p-2 rounded h-16">
+            <img src="/images/payment-images/GooglePay/48.png" alt="Google Pay" className="h-[48px]" />
           </div>
-          <div className="flex items-center justify-center bg-white p-2 rounded h-8">
-            <CreditCard size={20} className="text-gray-700" />
-            <span className="ml-1 text-xs text-gray-700 font-semibold">Visa</span>
+          <div className="flex items-center justify-center p-2 rounded h-16">
+            <img src="/images/payment-images/Visa/48.png" alt="Visa" className="h-[48px]" />
           </div>
-          <div className="flex items-center justify-center bg-white p-2 rounded h-8">
-            <CreditCard size={20} className="text-gray-700" />
-            <span className="ml-1 text-xs text-gray-700 font-semibold">MasterCard</span>
+          <div className="flex items-center justify-center p-2 rounded h-16">
+            <img src="/images/payment-images/Mastercard/48.png" alt="MasterCard" className="h-[48px]" />
           </div>
-          <div className="flex items-center justify-center bg-white p-2 rounded h-8">
-            <CreditCard size={20} className="text-gray-700" />
-            <span className="ml-1 text-xs text-gray-700 font-semibold">Amex</span>
+          <div className="flex items-center justify-center p-2 rounded h-16">
+            <img src="/images/payment-images/Amex/48.png" alt="Amex" className="h-[48px]" />
           </div>
-          <div className="flex items-center justify-center bg-white p-2 rounded h-8">
-            <CreditCard size={20} className="text-gray-700" />
-            <span className="ml-1 text-xs text-gray-700 font-semibold">Apple Pay</span>
+          <div className="flex items-center justify-center p-2 rounded h-16">
+            <img src="/images/payment-images/ApplePay/48.png" alt="Apple Pay" className="h-[48px]" />
           </div>
-          <div className="flex items-center justify-center bg-white p-2 rounded h-8">
-            <CreditCard size={20} className="text-gray-700" />
-            <span className="ml-1 text-xs text-gray-700 font-semibold">PIX</span>
+          <div className="flex items-center justify-center p-2 rounded h-16">
+            <img src="/images/payment-images/Pix/48.png" alt="PIX" className="h-[48px]" />
           </div>
         </div>
       </div>
