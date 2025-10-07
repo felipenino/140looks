@@ -41,7 +41,7 @@ function AppB() {
       <FloatingImagesLayer />
       
       {/* Hero Section with Black Background */}
-      <section className="py-16 md:py-24 bg-black-main text-white relative z-10">
+      <section className="py-16 md:py-24 bg-black text-white relative z-10">
         <div className="container-lg">
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
             {/* Video - 100% width on mobile, 50% on desktop (Shorts vertical) */}
